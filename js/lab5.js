@@ -13,5 +13,12 @@ do {
         alert('One or both entries are invalid.');
     }
     again = prompt('Run application again? (y or n)', 'y');
+    while(true){
+    if(again === 'y' || again === 'n')
+        break;
+    else
+       again = prompt("Please enter only 'y' or 'n'")
+    }
+
 } while (again === 'y');
 console.log('Application has exited.');
